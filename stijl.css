@@ -2,11 +2,36 @@ html{
   background-color: black;
 }
 
-div{
+.gaweg{
   height: 100%;
   width: 100%;
   background-image: url(gaweg.gif);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.byebye{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url(byebye.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: veranderGIF 3s;
+}
+
+@keyframes veranderGIF{
+  0%{
+    opacity: 0%;
+  }
+  99%{
+    opacity: 0%;
+  }
+  100%{
+    opacity: 100%;
+  }
 }
