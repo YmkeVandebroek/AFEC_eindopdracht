@@ -1,0 +1,34 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+ 	<h3>Blogpost: {{ title }}</h3>
+  <p>{{ date  }}</p>
+  {{ content | safe }}
+	<p>Deze post werd gepubliceerd op {{ date  }}.</p>
+	{% if tags %}
+    <p class="visually-hidden" id="tags-desc">Tags van deze post:</p>
+    <ul class="tags-list" aria-describedby="tags-desc">
+      {% for tag in tags %}
+        <li>
+          <a href="/tag/{{ tag | slug }}/">{{ tag | title | replace(' ', '') }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+
+{% set recommendedPosts = helpers.getSiblingContent(collections.blog, page) %}
+{% if recommendedPosts %}
+		<h3>Een andere interessante post...</h3>
+		<ul class="blog">
+	  	{% for item in recommendedPosts %}
+	    <li>
+        <a href="{{ item.url }}">
+          <p class="aangeraden">{{ item.data.title }}</p>
+        </a>
+	    </li>
+	    {% endfor %}
+	   </ul>
+{% endif %}
+
+{% endblock %}

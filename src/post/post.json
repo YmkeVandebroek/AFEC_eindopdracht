@@ -1,0 +1,5 @@
+{
+	"layout": "layouts/post.html",
+	"permalink": "/blog/{{ title | slug }}/index.html",
+	"css_extra": "/css/post.css"
+}

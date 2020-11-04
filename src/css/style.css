@@ -1,0 +1,312 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* ONDERSTAANDE UITGANGSPUNTEN ZAGEN WE IN DE LES */
+:root {
+  font-size: 62.5%; }
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit; }
+
+/*Heb eerst met prepros gewerkt, maar wertk precies niet goed samen met eleventy*/
+
+/*Ik ben precies toch niet zo handig te werk gegaan met deze site... oei...
+Maar... goed experiment-> toch weer elementen ontdekt die ik wil meenemen naar mijn
+volgende portfolio*/
+
+/*Hoewel... toch wel best cool en vernieuwens... alleen een paar zaken die te
+omslachtig zijn + nog wat veranderen en werken met multi-colum bijvoorbeeld*
+
+DUS... toch verder uitwerken als portfolio! Ja!!!*/
+
+html{
+  background-color: #FE53BB;
+}
+.achtergrond {
+  position: fixed; /*COOOOL!!! Ik heb nog nooit zoiets geprobeerd, helemaal zelf verzonnen! Jihaaa!*/
+  top: 0;
+  width: 100%; }
+
+header {
+  text-align: center;
+  width: 90%;
+  margin: 0 5%;
+  padding: 1rem;
+  position: absolute;
+  top: 40%;
+  background-color: white;
+  border-radius: 5%; }
+
+h1 {
+  background-color: white;
+  font-size: 3rem;
+  color: #FE53BB;
+  margin-bottom: 1rem;
+  font-family: "Kaushan Script", cursive;
+  text-align: center;
+}
+
+nav ul li a {
+  font-family: "Arvo", serif;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #F5D300;
+  margin-bottom: 20rem; }
+
+.selected {
+  color: #09FBD3; }
+
+h2 {
+  background-color: white;
+  text-align: center;
+  font-size: 3rem;
+  color: #09FBD3;
+  margin-bottom: 2rem;
+  font-family: "Kaushan Script", cursive; }
+
+h3{
+  background-color: white;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #09FBD3;
+  margin-bottom: 2rem;
+  font-family: "Kaushan Script", cursive;
+}
+
+a{
+  text-decoration: none;
+  color: #FE53BB;
+  font-family: "Kaushan Script", cursive;
+  font-size: 1.5rem;
+}
+
+h4{
+  text-decoration: none;
+  background-color: white;
+  text-align: center;
+  font-size: 2.3rem;
+  color: #FE53BB;
+  margin-bottom: 2rem;
+  font-family: "Kaushan Script", cursive;
+}
+
+h5{
+  text-decoration: none;
+  background-color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #F5D300;
+  margin-top: -2.5rem;
+  margin-bottom: 2rem;
+  font-family: "Kaushan Script", cursive;
+}
+
+main {
+  position: absolute;
+  top: 100vh;
+  background-color: white;
+  width: 90%;
+  margin: 0 5%;
+  padding: 2rem; }
+
+main p {
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: "Arvo", serif;
+  line-height: 1.5rem;
+  background-color: white;
+  padding: 1rem;
+ }
+
+main img{
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.deel1 {
+  height: 100vh;
+  background-image: -webkit-linear-gradient(60deg, #09FBD3 45%, transparent 0%), -webkit-linear-gradient(150deg, #F5D300 25%, transparent 0%);
+  background-image: -o-linear-gradient(60deg, #09FBD3 45%, transparent 0%), -o-linear-gradient(150deg, #F5D300 25%, transparent 0%);
+  background-image: linear-gradient(30deg, #09FBD3 45%, transparent 0%), linear-gradient(-60deg, #F5D300 25%, transparent 0%); }
+
+.deel2 {
+  height: 100vh;
+  background-color: #09FBD3;
+  background-image: -webkit-linear-gradient(60deg, #FE53BB 45%, transparent 0%), -webkit-linear-gradient(top, #F5D300 50%, transparent 0%);
+  background-image: -o-linear-gradient(60deg, #FE53BB 45%, transparent 0%), -o-linear-gradient(top, #F5D300 50%, transparent 0%);
+  background-image: linear-gradient(30deg, #FE53BB 45%, transparent 0%), linear-gradient(180deg, #F5D300 50%, transparent 0%); }
+
+.deel3 {
+  height: 100vh;
+  background-image: -webkit-linear-gradient(230deg, #FE53BB 40%, transparent 0%), -webkit-linear-gradient(top, #09FBD3 50%, transparent 0%);
+  background-image: -o-linear-gradient(230deg, #FE53BB 40%, transparent 0%), -o-linear-gradient(top, #09FBD3 50%, transparent 0%);
+  background-image: linear-gradient(220deg, #FE53BB 40%, transparent 0%), linear-gradient(180deg, #09FBD3 50%, transparent 0%); }
+
+.deel4 {
+  height: 100vh;
+  background-image: -webkit-linear-gradient(60deg, #F5D300 45%, transparent 0%), -webkit-linear-gradient(top, #09FBD3 50%, transparent 0%);
+  background-image: -o-linear-gradient(60deg, #F5D300 45%, transparent 0%), -o-linear-gradient(top, #09FBD3 50%, transparent 0%);
+  background-image: linear-gradient(30deg, #F5D300 45%, transparent 0%), linear-gradient(180deg, #09FBD3 50%, transparent 0%); }
+
+.deel5 {
+  height: 100vh;
+  background-image: -webkit-linear-gradient(60deg, #09FBD3 45%, transparent 0%), -webkit-linear-gradient(top, #F5D300 50%, transparent 0%);
+  background-image: -o-linear-gradient(60deg, #09FBD3 45%, transparent 0%), -o-linear-gradient(top, #F5D300 50%, transparent 0%);
+  background-image: linear-gradient(30deg, #09FBD3 45%, transparent 0%), linear-gradient(180deg, #F5D300 50%, transparent 0%); }
+
+  .deel6 {
+    height: 100vh;
+    background-color: #09FBD3;
+    background-image: -webkit-linear-gradient(60deg, #FE53BB 45%, transparent 0%), -webkit-linear-gradient(top, #F5D300 50%, transparent 0%);
+    background-image: -o-linear-gradient(60deg, #FE53BB 45%, transparent 0%), -o-linear-gradient(top, #F5D300 50%, transparent 0%);
+    background-image: linear-gradient(30deg, #FE53BB 45%, transparent 0%), linear-gradient(180deg, #F5D300 50%, transparent 0%); }
+
+  .deel7 {
+    height: 100vh;
+    background-image: -webkit-linear-gradient(230deg, #FE53BB 40%, transparent 0%), -webkit-linear-gradient(top, #09FBD3 50%, transparent 0%);
+    background-image: -o-linear-gradient(230deg, #FE53BB 40%, transparent 0%), -o-linear-gradient(top, #09FBD3 50%, transparent 0%);
+    background-image: linear-gradient(220deg, #FE53BB 40%, transparent 0%), linear-gradient(180deg, #09FBD3 50%, transparent 0%); }
+
+  .deel8 {
+    height: 100vh;
+    background-image: -webkit-linear-gradient(60deg, #F5D300 45%, transparent 0%), -webkit-linear-gradient(top, #09FBD3 50%, transparent 0%);
+    background-image: -o-linear-gradient(60deg, #F5D300 45%, transparent 0%), -o-linear-gradient(top, #09FBD3 50%, transparent 0%);
+    background-image: linear-gradient(30deg, #F5D300 45%, transparent 0%), linear-gradient(180deg, #09FBD3 50%, transparent 0%); }
+
+  .deel9 {
+    height: 100vh;
+    background-image: -webkit-linear-gradient(60deg, #09FBD3 45%, transparent 0%), -webkit-linear-gradient(top, #F5D300 50%, transparent 0%);
+    background-image: -o-linear-gradient(60deg, #09FBD3 45%, transparent 0%), -o-linear-gradient(top, #F5D300 50%, transparent 0%);
+    background-image: linear-gradient(30deg, #09FBD3 45%, transparent 0%), linear-gradient(180deg, #F5D300 50%, transparent 0%); }
+
+.streepjes {
+  height: 189vh;
+  min-width: 100%;
+  background: #FE53BB;
+  background-image: -webkit-repeating-linear-gradient(60deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2) 30px, transparent 0, transparent 60px);
+  background-image: -o-repeating-linear-gradient(60deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2) 30px, transparent 0, transparent 60px);
+  background-image: repeating-linear-gradient(30deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2) 30px, transparent 0, transparent 60px); }
+
+ul{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.tags-list a{
+  margin-bottom: 2rem;
+  color: #F5D300;
+  text-decoration: underline;
+  font-family: "Arvo", serif;
+  font-size: 1.2rem;
+}
+
+.aangeraden{
+  width: 100%;
+  margin: 0 auto;
+  background: #FE53BB;
+  background-image: -webkit-repeating-linear-gradient(60deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2) 30px, transparent 0, transparent 60px);
+  background-image: -o-repeating-linear-gradient(60deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2) 30px, transparent 0, transparent 60px);
+  background-image: repeating-linear-gradient(30deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2) 30px, transparent 0, transparent 60px);
+  font-size: 2rem;
+  color: white;
+  padding: 3rem;
+  font-family: "Kaushan Script", cursive;
+}
+
+.blog a{
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 500px) {
+  header{
+    width: 80%;
+    margin: 0 10%;
+  }
+  main{
+    width: 80%;
+    margin: 0 10%;
+  }
+}
+
+@media (min-width: 700px) {
+  header{
+    width: 60%;
+    margin: 0 20%;
+  }
+  main{
+    width: 60%;
+    margin: 0 20%;
+  }
+}
+
+@media (min-width: 900px) {
+  header{
+    width: 40%;
+    margin: 0 30%;
+  }
+  main{
+    width: 40%;
+    margin: 0 30%;
+  }
+}
+
+@media (min-width: 1100px) {
+  header{
+    width: 30%;
+    margin: 0 35%;
+  }
+  main{
+    width: 30%;
+    margin: 0 35%;
+  }
+}

@@ -1,0 +1,30 @@
+.achtergrond{
+  position: absolute;
+}
+
+.streepjes{
+  position: fixed;
+  z-index: -1;
+}
+
+/*Maakt eigenlijk niet uit dat achtergrond beetje langer is... wel?*/
+
+.deel5{
+  display: none;
+}
+
+.deel6{
+  display: none;
+}
+
+.deel7{
+  display: none;
+}
+
+.deel8{
+  display: none;
+}
+
+.deel9{
+  display: none;
+}
