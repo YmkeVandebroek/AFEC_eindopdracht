@@ -1,4 +1,4 @@
-# Site AFEC-eigensite-3
+# AFEC_eindopdracht
 
 ## Link naar Netlify
 Nog even vergeten...
